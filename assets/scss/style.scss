@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+body{
+    margin:0;
+    background-color: #235784;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////Header///////////////////////////////////////////////
+.header{
+    text-align: center;
+    font-family: 'Reggae One', cursive;
+    color:#f7aa00;
+    font-size: 1.6em;
+    &-marq{
+        font-size:2em;
+        padding-top: 5%;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////Article///////////////////////////////////////////////
+.art{
+    margin: 100px 35% 0 30%;
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+   ///////////////////////////////////////////sec-1/////////////////////////////////////////////////
+    &-sec1{
+        background-color: #f7aa00;
+        border: #235784 solid 2px;
+        color:#235784;
+        font-family: 'Work Sans', sans-serif;
+        font-size: .8em;
+        height:25vh;
+        width: 40vw;
+        &-head{
+            text-align: center;
+        }
+        &-div{
+        
+        &-form{
+            
+            &-r1{
+                margin-left: 25%;
+            }
+            &
+            &-r2{
+                margin-left: 25%;
+            }
+            &-r3{
+                margin-left: 25%;
+            }
+            &-r4{
+                margin-left: 25%;
+            }
+            &-num{
+                margin: 3% auto;
+            }
+        }
+        }
+        &-div2{
+            text-align: center;
+            padding-top:5%;
+            font-size:1.8em;
+            display: none;
+        }
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+   ///////////////////////////////////////////sec-2/////////////////////////////////////////////////
+   &-sec2{
+       @extend .art-sec1;
+       margin-top: 5%;
+       border: #235784 solid 2px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+
+       &-hide{
+        text-align: center;
+        color: tomato;
+        display:none;
+    }
+       &-text{
+           height: 5vh;
+           width:5vw;
+           background-color: #235784;
+           border-radius: 10px;
+           margin-left: 42%;
+           color: #f7aa00;
+           text-align: center;
+       }
+       &-button{
+        @extend .art-sec2-text;
+           width: 7vw;
+           height:5vh;
+           border: #235784 solid 1px;
+           margin-left: 40%;
+       }
+       &-button:hover{
+        background-image: linear-gradient(0deg, #235784 , #f7aa00);
+           color: #235784;
+       }
+   }
+}
+.result{
+    text-align: center;
+    color:#f7aa00;
+    margin-top:3%;
+}
+.animation{
+    animation:animationHide 2s 4s ease infinite 
+}
+@keyframes animationHide{
+    0%,100%{
+        opacity: 0;
+    }
+}

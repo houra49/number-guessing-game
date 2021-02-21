@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+<body>
+    <!------------------------------------------------------------------------------------------>
+    <!------------------------------------------Header------------------------------------------>
+    <header class="header">
+        <marquee width="100%" behavior="alternate" class="header-marq">Zahlen-Ratespiel 1-100</marquee>
+    </header>
+    <article class="art">
+        <!------------------------------------------------------------------------------------------>
+        <!-----------------------------------------section-1---------------------------------------->
+        <section class="art-sec1" id="sec">
+            <h3 class="art-sec1-head">Was denkst du,in wie viele Runden du raten kannst?</h3>
+            <div class="art-sec1-div" id="wählen">
+                <form action="" class="art-sec1-div-form">
+                    <input type="radio" name="go" value="4" id="num4" class="art-sec1-div-form-r1" onchange="Runden()"
+                        checked>
+                    <label for="zahl4" class="art-sec1-div-form-l1">4</label>
+                    <input type="radio" name="go" value="5" id="num5" class="art-sec1-div-form-r2" onchange="Runden()">
+                    <label for="zahl5" class="art-sec1-div-form-l2">5</label>
+                    <br><input type="radio" name="go" value="6" id="num6" class="art-sec1-div-form-r3"
+                        onchange="Runden()">
+                    <label for="zahl6" class="art-sec1-div-form-l3">6</label>
+                    <input type="radio" name="go" value="other" id="andere" class="art-sec1-div-form-r4"
+                        onchange="Runden()">
+                    <label for="other" class="art-sec1-div-form-l4">Bentzerdfiniert</label>
+                    <input type="number" name="" class="art-sec1-div-form-num" id="wählen-num" onchange="Runden()">
+                </form>
+            </div>
+            <div id="rund-wählen" class="art-sec1-div2">
+                <span id="rund">0</span>/<span id="rund2">5</span>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------>
+        <!-----------------------------------------section-2---------------------------------------->
+        <section class="art-sec2">
+            <p id="error" class="art-sec2-hide">Bitte gib a Nummer!</p>
+            <div>
+                <input type="text" name="" id="user-num" class="art-sec2-text">
+            </div>
+            <button class="art-sec2-button" id="button" onclick="raten()">Raten</button>
+        </section>
+    </article>
+    <!------------------------------------------------------------------------------------------>
+    <!----------------------------------------Ergebnis-Feld------------------------------------->
+    <div id="result" class="result"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+body {
+  margin: 0;
+  background-color: #235784;
+}
+
+.header {
+  text-align: center;
+  font-family: "Reggae One", cursive;
+  color: #f7aa00;
+  font-size: 1.6em;
+}
+.header-marq {
+  font-size: 2em;
+  padding-top: 5%;
+}
+
+.art {
+  margin: 100px 35% 0 30%;
+}
+.art-sec1, .art-sec2 {
+  background-color: #f7aa00;
+  border: #235784 solid 2px;
+  color: #235784;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.8em;
+  height: 25vh;
+  width: 40vw;
+}
+.art-sec1-head {
+  text-align: center;
+}
+.art-sec1-div-form-r1 {
+  margin-left: 25%;
+}
+.art-sec1-div-form .art-sec1-div-form-r2 {
+  margin-left: 25%;
+}
+.art-sec1-div-form-r3 {
+  margin-left: 25%;
+}
+.art-sec1-div-form-r4 {
+  margin-left: 25%;
+}
+.art-sec1-div-form-num {
+  margin: 3% auto;
+}
+.art-sec1-div2 {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 1.8em;
+  display: none;
+}
+.art-sec2 {
+  margin-top: 5%;
+  border: #235784 solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.art-sec2-hide {
+  text-align: center;
+  color: tomato;
+  display: none;
+}
+.art-sec2-text, .art-sec2-button {
+  height: 5vh;
+  width: 5vw;
+  background-color: #235784;
+  border-radius: 10px;
+  margin-left: 42%;
+  color: #f7aa00;
+  text-align: center;
+}
+.art-sec2-button {
+  width: 7vw;
+  height: 5vh;
+  border: #235784 solid 1px;
+  margin-left: 40%;
+}
+.art-sec2-button:hover {
+  background-image: linear-gradient(0deg, #235784, #f7aa00);
+  color: #235784;
+}
+
+.result {
+  text-align: center;
+  color: #f7aa00;
+  margin-top: 3%;
+}
+
+.animation {
+  animation: animationHide 2s 4s ease infinite;
+}
+
+@keyframes animationHide {
+  0%, 100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=stylo.css.map */
